@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            /* background-color: rgb(121, 153, 161); */
+            font-size: x-large;
+        }
+        #image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            display: flex;
+            height: 200px;
+            width: 700px;
+            border-style: solid;
+            border-color: black;
+
+        }
+        #box3{
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #box1{
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        #box2{
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        #newdiv{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            margin-top: 10px;
+    
+    @media screen and (max-width:300px){
+        background-color: green;
+    }
+
+    @media screen and (min-width:300px) and (max-width:400px){
+        background-color: red;
+    }
+    @media screen and (min-width:400px){
+        background-color: blue;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Academics</a>
+            <a href="#">Notice</a>
+            <a href="#">Admissions</a>
+            <a href="#">Placement</a>
+            <a href="#">Gallery</a>
+
+
+        </nav>
+
+    </header>
+    <main>
+        <div id="image"><image src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_logo.width-500.format-webp.webp"></image></div>
+        <div id="container">
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+        </div>
+        <div id="newdiv"></div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
