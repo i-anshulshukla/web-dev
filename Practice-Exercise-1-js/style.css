@@ -1,0 +1,26 @@
+.click{
+    color: red;
+}
+
+
+#shopping{
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    padding: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(220, 225, 220);
+    font-size: 20px;
+    display: inline-block;
+}
+ #bag{
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    padding: 13px;
+    background-color: rgb(138, 219, 129);
+    font-size: 20px;
+    display: inline-block;
+
+}
