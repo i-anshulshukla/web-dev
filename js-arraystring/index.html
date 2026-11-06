@@ -1,0 +1,70 @@
+<script>
+let arr = [5, 6];
+arr.unshift(4);
+arr.push(7);
+console.log("1:", arr);
+
+function getElementAt(arr, index) {
+  return arr[index];
+}
+let numbers = [10, 20, 30, 40];
+console.log("2:", getElementAt(numbers, 2));
+
+let original = [1, 2, 3, 4, 5];
+let copy = original.slice();
+console.log("3:", copy);
+
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+let count4 = 0, num4 = 2, primes4 = [];
+while (count4 < 5) {
+  if (isPrime(num4)) {
+    primes4.push(num4);
+    count4++;
+  }
+  num4++;
+}
+console.log("4:", primes4);
+
+let count5 = 0, num5 = 2, primes5 = [];
+while (true) {
+  if (isPrime(num5)) {
+    primes5.push(num5);
+    count5++;
+  }
+  if (count5 === 5) {
+    break;
+  }
+  num5++;
+}
+console.log("5:", primes5);
+
+let res6 = [];
+for (let i = 10; i >= 1; i--) {
+  res6.push(i);
+}
+console.log("6:", res6);
+
+let given7 = [1, -6, 5, 7, -98];
+let res7 = [];
+for (let i = 0; i < given7.length; i++) {
+  if (given7[i] < 0) {
+    continue;
+  }
+  res7.push(given7[i]);
+}
+console.log("7:", res7);
+
+let words8 = ['KG', 'Coding', 'Javascript', 'Course', 'is', 'Best'];
+let str8 = '';
+for (let i = 0; i < words8.length; i++) {
+  str8 += words8[i] + ' ';
+}
+console.log("8:", str8.trim());
+</script>
